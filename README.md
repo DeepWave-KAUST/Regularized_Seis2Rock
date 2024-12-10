@@ -1,23 +1,25 @@
-![LOGO](https://github.com/DeepWave-Kaust/Project-Template/blob/main/asset/logo.png)
 
-Reproducible material for **XXX - Author M., Author M., Author C.**
+# Regularized Seis2Rock
 
-[Click here](https://kaust.sharepoint.com/:f:/r/sites/M365_Deepwave_Documents/Shared%20Documents/Restricted%20Area/DWxxxxxxxx) to access the Project Report. Authentication to the _Restricted Area_ filespace is required.
+> **<Regularization strategies for Seis2Rock-based petrophysical inversion of pre-stack seismic data</span>** \
+> Corrales M.<sup>1</sup>, Romero J.<sup>1</sup>, Luiken N.<sup>1</sup>, Hoteit H.<sup>1</sup>, Ravasi M.<sup>1</sup>\
+> <sup>1</sup> King Abdullah University of Science and Technology (KAUST)
 
-# Project structure
+
+## Project structure
 This repository is organized as follows:
 
-* :open_file_folder: **package**: python library containing routines for ....;
-* :open_file_folder: **asset**: folder containing logo;
-* :open_file_folder: **data**: folder containing data (or instructions on how to retrieve the data
-* :open_file_folder: **notebooks**: set of jupyter notebooks reproducing the experiments in the paper (see below for more details);
-* :open_file_folder: **scripts**: set of python scripts used to run multiple experiments ...
+* :open_file_folder: **assets**: images and figures of the project.
+* :open_file_folder: **seis2rock**: python library containing routines for seis2rock.
+* :open_file_folder: **data**: folder containing data (and instructions on how to retrieve the data).
+* :open_file_folder: **notebooks**: set of jupyter notebooks reproducing the experiments in the paper (see below for more details).
 
-## Notebooks
+
+## Notebooks for Volve dataset
 The following notebooks are provided:
 
-- :orange_book: ``X1.ipynb``: notebook performing ...;
-- :orange_book: ``X2.ipynb``: notebook performing ...
+- :orange_book: ``01_Regularization_Comparison_Well_NO_15_9_19_BT2_stacking_wells.ipynb``: Regularization comparison for fence along well NO_15_9_19_BT2.
+- :orange_book: ``02_Regularization_Comparison_Well_NO_15_9_19_A_stacking_wells.ipynb``: Regularization comparison for fence along well NO_15_9_19_A. 
 
 
 ## Getting started :space_invader: :robot:
@@ -25,18 +27,33 @@ To ensure reproducibility of the results, we suggest using the `environment.yml`
 
 Simply run:
 ```
-./install_env.sh
+./install_env_gpu.sh
 ```
-It will take some time, if at the end you see the word `Done!` on your terminal you are ready to go. 
-
-Remember to always activate the environment by typing:
+It will take some time, if at the end you see the word `Done!` on your terminal you are ready to go. Αctivate the environment by typing:
 ```
-conda activate my_env
+conda activate rseis2rock_gpu
 ```
 
-**Disclaimer:** All experiments have been carried on a Intel(R) Xeon(R) CPU @ 2.10GHz equipped with a single NVIDIA GEForce RTX 3090 GPU. Different environment 
-configurations may be required for different combinations of workstation and GPU.
+After that you can simply install your package: (double check your new environment is active to proceed as follows)
+```
+pip install .
+```
+or in developer mode:
+```
+pip install -e .
+```
 
-## Cite us 
-DWXXX - Author1 et al. (2022) Report title.
 
+> **Note** <br>
+> For computer time, this research used the resources of the Supercomputing Laboratory at KAUST in Thuwal, Saudi Arabia. All experiments have been carried on > a Intel(R) Xeon(R) Platinum 8260 CPU @ 2.40GHz equipped with a single NVIDIA TESLA V100. Different environment configurations may be required for different > combinations of workstation and GPU
+
+
+## Cite us
+
+```
+@article{corrales_seis2rock_2023,
+      title=Regularization strategies for Seis2Rock-based petrophysical inversion of pre-stack seismic data}, 
+      author={Corrales M., Romero J., Luiken N., Hoteit H., Ravasi M.},
+      year={2023}
+      }
+```
