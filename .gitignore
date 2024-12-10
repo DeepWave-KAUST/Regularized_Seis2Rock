@@ -15,10 +15,10 @@ db.sqlite3
 # Build #
 build
 dist
-package.egg-info/
+seis2rock.egg-info/
 
 # setuptools_scm generated  #
-package/version.py 
+seis2rock/version.py 
 
 # Development #
 .ipynb_checkpoints/
