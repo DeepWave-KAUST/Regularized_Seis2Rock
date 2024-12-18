@@ -51,9 +51,18 @@ pip install -e .
 ## Cite us
 
 ```
-@article{corrales_seis2rock_2023,
-      title=Regularization strategies for Seis2Rock-based petrophysical inversion of pre-stack seismic data}, 
-      author={Corrales M., Romero J., Luiken N., Hoteit H., Ravasi M.},
-      year={2023}
-      }
+@incollection{corrales_regularization_2024,
+	series = {{SEG} {Technical} {Program} {Expanded} {Abstracts}},
+	title = {Regularization strategies for {Seis2Rock}-based petrophysical inversion of prestack seismic data},
+	url = {https://library.seg.org/doi/10.1190/image2024-4093717.1},
+	urldate = {2024-12-18},
+	booktitle = {Fourth {International} {Meeting} for {Applied} {Geoscience} \& {Energy}},
+	publisher = {Society of Exploration Geophysicists and American Association of Petroleum Geologists},
+	author = {Corrales, Miguel and Romero, Juan and Luiken, Nick and Hoteit, Hussein and Ravasi, Matteo},
+	month = dec,
+	year = {2024},
+	doi = {10.1190/image2024-4093717.1},
+	keywords = {inversion, machine learning, prestack},
+	pages = {26--30},
+}
 ```
