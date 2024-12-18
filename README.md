@@ -2,7 +2,7 @@
 # Regularization strategies for Seis2Rock-based petrophysical inversion of pre-stack seismic data
 
 > Corrales M.<sup>1</sup>, Romero J.<sup>1</sup>, Luiken N.<sup>1</sup>, Hoteit H.<sup>1</sup>, Ravasi M.<sup>1</sup>\
-> <sup>1</sup> King Abdullah University of Science and Technology (KAUST)
+> <sup>1</sup> King Abdullah University of Science and Technology (KAUST)\
 > https://doi.org/10.1190/image2024-4093717.1
 
 
